@@ -1,5 +1,5 @@
 import { pickValidObjectProperties } from '@/helpers/pickValidObjectProperties';
-import { ProductFilterState } from '@/Hooks/useProductFilters';
+import { ProductFilterState } from '@/Store/products';
 
 export function addProductFilterParamtersToUrl(
   url: string | undefined,
@@ -24,5 +24,5 @@ export function addProductFilterParamtersToUrl(
   });
 
   // Removes the default encoding from search params serialisation.
-  return `${urlObject.origin}${urlObject.pathname}?${searchParams.toString().replace(/%5B/g, '[').replace(/%5D/g, ']')}`;
+  return `${window.location.origin}${urlObject.pathname}?${searchParams.toString().replace(/%5B/g, '[').replace(/%5D/g, ']')}`;
 }
