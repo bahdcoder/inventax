@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "043171cc375f7cb16af3208f11d5b11c",
+    "content-hash": "c4f6271b9f02efe06e7e9ad9674c0c8b",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -3672,6 +3672,140 @@
             "time": "2024-04-27T21:32:50+00:00"
         },
         {
+            "name": "spatie/laravel-package-tools",
+            "version": "1.16.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-package-tools.git",
+                "reference": "c7413972cf22ffdff97b68499c22baa04eddb6a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/c7413972cf22ffdff97b68499c22baa04eddb6a2",
+                "reference": "c7413972cf22ffdff97b68499c22baa04eddb6a2",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.28|^10.0|^11.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.7|^8.0",
+                "pestphp/pest": "^1.22",
+                "phpunit/phpunit": "^9.5.24",
+                "spatie/pest-plugin-test-time": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\LaravelPackageTools\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tools for creating Laravel packages",
+            "homepage": "https://github.com/spatie/laravel-package-tools",
+            "keywords": [
+                "laravel-package-tools",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-package-tools/issues",
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.16.5"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-08-27T18:56:10+00:00"
+        },
+        {
+            "name": "spatie/laravel-query-builder",
+            "version": "6.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-query-builder.git",
+                "reference": "64f0453f4dea6a6fabf1ce4ddbb553e14da67bb6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/64f0453f4dea6a6fabf1ce4ddbb553e14da67bb6",
+                "reference": "64f0453f4dea6a6fabf1ce4ddbb553e14da67bb6",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^10.0|^11.0",
+                "illuminate/http": "^10.0|^11.0",
+                "illuminate/support": "^10.0|^11.0",
+                "php": "^8.2",
+                "spatie/laravel-package-tools": "^1.11"
+            },
+            "require-dev": {
+                "ext-json": "*",
+                "mockery/mockery": "^1.4",
+                "nunomaduro/larastan": "^2.0",
+                "orchestra/testbench": "^7.0|^8.0",
+                "pestphp/pest": "^2.0",
+                "phpunit/phpunit": "^10.0",
+                "spatie/invade": "^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\QueryBuilder\\QueryBuilderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\QueryBuilder\\": "src",
+                    "Spatie\\QueryBuilder\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Vanderbist",
+                    "email": "alex@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily build Eloquent queries from API requests",
+            "homepage": "https://github.com/spatie/laravel-query-builder",
+            "keywords": [
+                "laravel-query-builder",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-query-builder/issues",
+                "source": "https://github.com/spatie/laravel-query-builder"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                }
+            ],
+            "time": "2024-10-03T11:10:10+00:00"
+        },
+        {
             "name": "symfony/console",
             "version": "v6.4.13",
             "source": {
@@ -6356,6 +6490,78 @@
             "time": "2020-07-09T08:09:16+00:00"
         },
         {
+            "name": "laravel/dusk",
+            "version": "v8.2.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/dusk.git",
+                "reference": "fde2ae6c1b32d2f8dbdcff300bbd6e2ccffb1bb4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/dusk/zipball/fde2ae6c1b32d2f8dbdcff300bbd6e2ccffb1bb4",
+                "reference": "fde2ae6c1b32d2f8dbdcff300bbd6e2ccffb1bb4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-zip": "*",
+                "guzzlehttp/guzzle": "^7.5",
+                "illuminate/console": "^10.0|^11.0",
+                "illuminate/support": "^10.0|^11.0",
+                "php": "^8.1",
+                "php-webdriver/webdriver": "^1.9.0",
+                "symfony/console": "^6.2|^7.0",
+                "symfony/finder": "^6.2|^7.0",
+                "symfony/process": "^6.2|^7.0",
+                "vlucas/phpdotenv": "^5.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.6",
+                "orchestra/testbench": "^8.19|^9.0",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.1|^11.0",
+                "psy/psysh": "^0.11.12|^0.12"
+            },
+            "suggest": {
+                "ext-pcntl": "Used to gracefully terminate Dusk when tests are running."
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Dusk\\DuskServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Dusk\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel Dusk provides simple end-to-end testing and browser automation.",
+            "keywords": [
+                "laravel",
+                "testing",
+                "webdriver"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/dusk/issues",
+                "source": "https://github.com/laravel/dusk/tree/v8.2.10"
+            },
+            "time": "2024-10-22T13:58:17+00:00"
+        },
+        {
             "name": "laravel/pint",
             "version": "v1.18.1",
             "source": {
@@ -6840,6 +7046,72 @@
                 "source": "https://github.com/phar-io/version/tree/3.2.1"
             },
             "time": "2022-02-21T01:04:05+00:00"
+        },
+        {
+            "name": "php-webdriver/webdriver",
+            "version": "1.15.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-webdriver/php-webdriver.git",
+                "reference": "cd52d9342c5aa738c2e75a67e47a1b6df97154e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-webdriver/php-webdriver/zipball/cd52d9342c5aa738c2e75a67e47a1b6df97154e8",
+                "reference": "cd52d9342c5aa738c2e75a67e47a1b6df97154e8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-zip": "*",
+                "php": "^7.3 || ^8.0",
+                "symfony/polyfill-mbstring": "^1.12",
+                "symfony/process": "^5.0 || ^6.0 || ^7.0"
+            },
+            "replace": {
+                "facebook/webdriver": "*"
+            },
+            "require-dev": {
+                "ergebnis/composer-normalize": "^2.20.0",
+                "ondram/ci-detector": "^4.0",
+                "php-coveralls/php-coveralls": "^2.4",
+                "php-mock/php-mock-phpunit": "^2.0",
+                "php-parallel-lint/php-parallel-lint": "^1.2",
+                "phpunit/phpunit": "^9.3",
+                "squizlabs/php_codesniffer": "^3.5",
+                "symfony/var-dumper": "^5.0 || ^6.0"
+            },
+            "suggest": {
+                "ext-SimpleXML": "For Firefox profile creation"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "lib/Exception/TimeoutException.php"
+                ],
+                "psr-4": {
+                    "Facebook\\WebDriver\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A PHP client for Selenium WebDriver. Previously facebook/webdriver.",
+            "homepage": "https://github.com/php-webdriver/php-webdriver",
+            "keywords": [
+                "Chromedriver",
+                "geckodriver",
+                "php",
+                "selenium",
+                "webdriver"
+            ],
+            "support": {
+                "issues": "https://github.com/php-webdriver/php-webdriver/issues",
+                "source": "https://github.com/php-webdriver/php-webdriver/tree/1.15.1"
+            },
+            "time": "2023-10-20T12:21:20+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",

@@ -1,34 +1,24 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://app.roamr.org/Roamr_word_logo.png" width="400" alt="Laravel Logo"></a></p>
+# Inventory management system in laravel
 
-## Requirements
+This is a simple inventory management system built with Laravel and Inertia.js. It allows users to view a list of products, filter products by category, stock status and name, and create new products.
 
-This application is based on [Laravel](https://laravel.com/), [Jetstream](https://jetstream.laravel.com/introduction.html) and [React](https://react.dev/)
+## Summary of features
 
-- PHP 8.1
-- NodeJS v20.*
-- NPM 10.*
-- Docker
+This is a summary of the features supported by this application:
 
-## Running application
+- [x] A user can see a list of products available in the inventory by visiting the `/` page.
+- [x] A user can filter products in inventory based on category, stock status and name.
+- [x] A user can create a product by visiting the home page `/` and clicking the `Add product` button.
+- [x] Application is fully responsive and provides a good user experience across devices.
 
-The following commands assume PHP, composer and npm are available in PATH.
+## Set up
 
-- `cp example.env .env`
-  - Create an environment file from the example
-- `composer install`
-  - This will install the PHP dependencies
-- `npm install`
-  - Install the frontend dependencies
-- `./vendor/bin/sail build`
-  - This will setup the docker environment using [Laravel Sail](https://laravel.com/docs/11.x/sail)
-- `./vendor/bin/sail up -d`
-  - Startup the containers
-- `./vendor/bin/sail key:generate`
-  - Setup laravel encryption key in .env file
-- `./vendor/bin/sail artisan migrate`
-  - Setup database tables
-- `./vendor/bin/sail artisan db:seed`
-  - Seed database with data
-- `npm run dev`
-  - Build the frontend
-- You should now have access to the site on http://localhost/
+## To improve
+
+For future improvements, these are some of the changes I would make:
+
+- [ ] The status radio feels heavy. This is because of the dom update strategy. At the moment it highlights the selected status after inertia updates the page. We could make it auto highlight on click.
+- [ ] Improve categories combobox to handle unique cases like api failure, search abort, no results, etc.
+- [ ] Refactor components to reusable hooks. Example: Paginator, Combobox.
+- [ ] Fix scroll behaviour on page navigation.
+- [ ] Add more feature tests for the product and category controllers to ensure they keep working as expected.
