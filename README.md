@@ -13,6 +13,25 @@ This is a summary of the features supported by this application:
 
 ## Set up
 
+The setup of this project follows the standard Laravel setup with nothing out of the ordinary after you install dependencies.
+
+1. Install dependencies using `composer install` and `npm install`
+2. Build client side bundle using `npm run build`
+3. Copy the `.env.example` file to `.env` and update the database configuration. By default it ships with Sqlite for simplicity.
+4. Run the migrations and seed the database using `php artisan migrate --seed`. This will generate enough (a lot of) data to easily test the features of this application.
+
+It may be easiest to set up an sqlite database by just creating a `database/database.sqlite` file and running the migrations.
+
+```bash
+php artisan migrate:fresh
+```
+
+You may also want to run the automated tests:
+
+```bash
+php artisan dusk
+```
+
 ## To improve
 
 For future improvements, these are some of the changes I would make:
