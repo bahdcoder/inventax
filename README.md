@@ -2,6 +2,8 @@
 
 This is a simple inventory management system built with Laravel and Inertia.js. It allows users to view a list of products, filter products by category, stock status and name, and create new products.
 
+[https://inventax.up.railway.app/](View the live application demo here)
+
 ## Summary of features
 
 This is a summary of the features supported by this application:
